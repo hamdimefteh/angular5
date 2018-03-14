@@ -1,17 +1,41 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
+import { AppheaderComponent } from './components/appheader/appheader.component';
+import { AppcontentComponent } from './components/appcontent/appcontent.component';
+import { AppfooterComponent } from './components/appfooter/appfooter.component';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { AppmenuComponent } from './components/appmenu/appmenu.component';
+import { AppasideComponent } from './components/appaside/appaside.component';
+import { AppinscriptionetudiantComponent } from './components/appinscriptionetudiant/appinscriptionetudiant.component';
+import { AppRoutingModule ,RoutingComponents } from './app-routing/app-routing.module';
+import { ApphomeComponent } from './components/apphome/apphome.component';
+import { AppinscriptionComponent } from './components/appinscription/appinscription.component';
+import { AppinscriptionenseignantComponent } from './components/appinscriptionenseignant/appinscriptionenseignant.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppheaderComponent,
+    AppcontentComponent,
+    AppfooterComponent,
+    AppmenuComponent,
+    AppasideComponent,
+    AppinscriptionetudiantComponent,
+    RoutingComponents,
+    ApphomeComponent,
+    AppinscriptionComponent,
+    AppinscriptionenseignantComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+  MDBBootstrapModule.forRoot(),
+    AppRoutingModule
+  
   ],
+  schemas: [NO_ERRORS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

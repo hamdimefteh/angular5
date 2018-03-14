@@ -1,0 +1,162 @@
+
+        <div class="card animated pulse mb-2 mt-2">
+
+
+    
+                <div class="card-header bg-default lighten-1 white-text">
+                        Inscription d'un Etudiant 
+                    </div>
+                    <div class="card-body">
+                            <div class="row"> 
+                
+          
+              
+                        <div class='col'> 
+                            
+                            <form>
+
+
+
+                                
+
+                           
+
+                                <div class="card ">
+                                        <div class="card-header bg-default lighten-2 white-text">
+                                               Fiche Etudiant 
+                                            </div>
+           <div class="card-body">
+
+                <div class="row">
+<div class="col">
+     
+    
+          <input type="text" placeholder="matricule" name="matricule" id="matricule" class="form-control" mdbActive>
+          
+          <input type="text" placeholder="Carte Identité" name="cin" id="cin" class="form-control pb-1" mdbActive>
+          <input type="text" placeholder="Nom" name="nom" id="nom" class="form-control" mdbActive>
+          <input type="text" placeholder="Prénom" name="prenom" id="prenom" class="form-control" mdbActive>
+          <input type="email" placeholder="Email" name="email" id="email" class="form-control" mdbActive>
+          
+     
+   
+    
+  </div>
+
+
+  <div class="col">
+       
+            
+                <select class="custom-select " id="ville" name="ville">
+                        <option selected>ville ...</option>
+                        <option value="1">sfax</option>
+                        <option value="2">tunis</option>
+                        <option value="3">jerba</option>
+                      </select>
+        
+                      <select class="custom-select " id="etablissement" name="etablissement">
+                            <option selected>etablissement...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <select class="custom-select " id="classe" name="classe ">
+                                <option selected>Classe...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <select class="custom-select " id="filiere" name="filiere">
+                                    <option selected>filiere...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                  <select class="custom-select " id="groupe" name="groupe">
+                                        <option selected>groupe...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                     
+      
+   
+      
+    </div>
+
+
+
+
+    </div></div>
+</div>
+<br>
+<div class="row"><div class="col">
+        <div class="card">
+                <div class="card-header bg-default lighten-2 white-text">
+                      infos compte
+                    </div>
+                    <div class="card-body">
+
+                            <div class="md-form">
+                                    <i class="fa fa-user prefix grey-text"></i>
+                                    <input type="text" name="pseudo" id="pseudo" class="form-control" mdbActive>
+                                    <label for="defaultForm-email">Pseudo</label>
+                                </div>
+                              
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix grey-text"></i>
+                                    <input type="password" id="password1" name="password1" class="form-control" mdbActive>
+                                    <label for="defaultForm-pass">password</label>
+                                </div>
+
+
+
+
+</div></div></div> 
+
+</div>
+
+
+
+
+    </form>
+
+</div>
+
+
+    <div class='col-sm-5'>
+    
+      
+                        
+            <div class='row pl-3 pt-3' >
+
+                  
+                <i class="fa fa-comment orange-text" aria-hidden="true"> </i><br>
+                <ul class="list-group orange-text pl-3" > 
+      
+                    <li class="" *ngFor="let message of messageet; let i = index"> 
+                        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                    
+                        {{ message.name }} 
+                     
+                    </li>
+                   
+        
+        
+        
+       </ul>
+                 
+            </div> 
+                   
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <button class="btn btn-deep-orange btn-small waves-light btn-sm" mdbRippleRadius
+    routerLink="/inscriptionetudiant"
+    >s'enregister</button>
+    </div>
+

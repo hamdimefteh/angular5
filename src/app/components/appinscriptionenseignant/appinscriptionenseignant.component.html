@@ -1,0 +1,139 @@
+
+   
+    <div class="card animated pulse">
+
+
+    
+        <div class="card-header bg-default lighten-1 white-text">
+                Inscription d'un Enseignant
+            </div>
+            <div class="card-body">
+                    <div class="row"> 
+        
+  
+      
+                <div class='col'> 
+                    
+                    <form>
+
+
+
+                        
+
+                   
+
+                        <div class="card ">
+                                <div class="card-header bg-default lighten-2 white-text">
+                                       Fiche Enseignant 
+                                    </div>
+   <div class="card-body">
+
+        <div class="row">
+<div class="col">
+
+
+  
+        <input type="text" placeholder="Carte Identité" name="cine" id="cine" class="form-control pb-1" mdbActive>
+        <input type="text" placeholder="Nom" name="nome" id="nome" class="form-control" mdbActive>
+        <input type="text" placeholder="Prénom" name="prenome" id="prenome" class="form-control" mdbActive>
+  
+        <select class="custom-select " id="villee" name="villee">
+                <option selected>ville ...</option>
+                <option value="1">sfax</option>
+                <option value="2">tunis</option>
+                <option value="3">jerba</option>
+              </select>
+
+              <select class="custom-select " id="etablissemente" name="etablissemente">
+                    <option selected>etablissement...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+ 
+  <input type="email" placeholder="Email" name="emaile" id="emaile" class="form-control" mdbActive>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div></div>
+</div>
+<br>
+<div class="row"><div class="col">
+<div class="card">
+        <div class="card-header bg-default lighten-2 white-text">
+              infos compte
+            </div>
+            <div class="card-body">
+
+                    <div class="md-form">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" name="pseudoe" id="pseudoe" class="form-control" mdbActive>
+                            <label for="defaultForm-email">Pseudo</label>
+                        </div>
+                      
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix grey-text"></i>
+                            <input type="password" id="password1e" name="password1e" class="form-control" mdbActive>
+                            <label for="defaultForm-pass">password</label>
+                        </div>
+
+
+
+
+</div></div></div> 
+
+</div>
+
+
+
+
+</form>
+
+</div>
+
+
+<div class='col-sm-5'>
+
+
+                
+    <div class='row pl-3 pt-3' >
+
+          
+        <i class="fa fa-comment orange-text" aria-hidden="true"> </i> 
+   <ul class="list-group orange-text pl-3" > 
+      
+                <li class="" *ngFor="let message of messageen; let i = index"> 
+                    <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                
+                    {{ message.name }} 
+                 
+                </li>
+               
+    
+    
+    
+   </ul>
+         
+    </div> 
+           
+
+</div>
+
+</div>
+
+</div>
+
+<button class="btn btn-deep-orange btn-small waves-light btn-sm" mdbRippleRadius
+routerLink="/inscriptionetudiant"
+>s'enregister</button>
+</div><br>
