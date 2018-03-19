@@ -1,7 +1,11 @@
-<app-appheader></app-appheader>
-<app-appmenu></app-appmenu>
-<div class="container-fluid col-lg-8 contenu">
+<div class="row"><div class="container-fluid col-lg-12"><app-appheader></app-appheader></div></div>
+<div class="row">
+        <div class="container-fluid col-lg-2">    
+<app-appmenu></app-appmenu></div>
+<div class="container-fluid col-lg-8 contenu pt-2 ">
 <router-outlet></router-outlet>
 </div>
-<app-appaside></app-appaside>
-<app-appfooter></app-appfooter>
+<div class=" container-fluid col-lg-2">
+<app-appaside></app-appaside></div>
+</div>
+<div class="row"><div class="container-fluid col-lg-12"><app-appfooter></app-appfooter></div></div>

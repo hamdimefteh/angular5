@@ -11,6 +11,7 @@ const routes: Routes = [
   {path:'inscriptionetudiant' , component : AppinscriptionetudiantComponent },
   {path:'authentification' , component : AppcontentComponent },
   {path:'home' , component : ApphomeComponent },
+  {path:'' , component : ApphomeComponent },
   {path:'inscription' , component : AppinscriptionComponent },
 ];
 
