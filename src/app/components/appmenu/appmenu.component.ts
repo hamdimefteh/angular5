@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Globals } from '../../../../global';
 @Component({
   selector: 'app-appmenu',
   templateUrl: './appmenu.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppmenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(public g : Globals) { }
 
   ngOnInit() {
   }

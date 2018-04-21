@@ -130,11 +130,11 @@ MIT
 MIT
 MIT
 
-@angular/router@5.2.8
+@angular/forms@5.2.8
 MIT
 MIT
 
-@angular/forms@5.2.8
+@angular/router@5.2.8
 MIT
 MIT
 

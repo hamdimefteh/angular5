@@ -1,4 +1,4 @@
-<menu class="animated pulse m-0 p-0">
+<menu *ngIf="g.affichemenu"  class=" m-0 p-0 animated lightSpeedIn">
 
 
         
@@ -7,16 +7,23 @@
       
               
                   <!-- Navigation -->
-                  <div class="list-group white-text" id="list-tab" role="tablist"><strong>
-                    <a class="list-group-item list-group-item-action  example hoverable  bg-default white-text" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" routerLink="/home"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Home</a>
-                     <a class="list-group-item list-group-item-action example hoverable bg-default white-text" id="list-profile-list" data-toggle="list"  role="tab" aria-controls="profile" routerLink="./authentification"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Authentification</a>
-                     <a class="list-group-item list-group-item-action  example hoverable bg-default white-text" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" routerLink="/inscription"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> inscription</a>
-                     <a class="list-group-item list-group-item-action example hoverable bg-default white-text" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Settings</a>
-                     <a class="list-group-item list-group-item-action  example hoverable bg-default white-text  " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Home</a>
-                     <a class="list-group-item list-group-item-action example hoverable bg-default white-text" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Profile</a>
-                     <a class="list-group-item list-group-item-action  example hoverable bg-default white-text" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Messages</a>
-                     <a class="list-group-item list-group-item-action example hoverable bg-default white-text" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Settings</a>
-                  </strong>  </div>
+                  <div class="  list-group white-text " id="list-tab" role="tablist"><strong>
+                    <a class=" list-group-item list-group-item-action  example hoverable  cyan white-text " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" routerLink="/home" ><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Home</a>
+                    
+                     <a  *ngIf="g.notloggin" class="list-group-item list-group-item-action example hoverable cyan white-text " id="list-profile-list" data-toggle="list"  role="tab" aria-controls="profile" routerLink="./authentification"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Authentification</a>
+                     <a *ngIf="g.notloggin" class="list-group-item list-group-item-action  example hoverable cyan white-text " id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" routerLink="/inscription"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> inscription</a>
+                     <a *ngIf="!g.notloggin" class="list-group-item list-group-item-action example hoverable cyan white-text " id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"routerLink="/profile" ><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Profile</a>
+                     <a class="list-group-item list-group-item-action  example hoverable cyan white-text  " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Home</a>
+                     <a class="list-group-item list-group-item-action example hoverable cyan white-text " id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Profile</a>
+                     <a class="list-group-item list-group-item-action  example hoverable cyan white-text " id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Messages</a>
+                     <a class="list-group-item list-group-item-action example hoverable cyan white-text " id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Settings</a>
+                 
+                     <a class="list-group-item list-group-item-action  example hoverable cyan white-text  " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Home</a>
+                     <a class="list-group-item list-group-item-action example hoverable cyan white-text " id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Profile</a>
+                     <a class="list-group-item list-group-item-action  example hoverable cyan white-text " id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Messages</a>
+                     <a class="list-group-item list-group-item-action example hoverable cyan white-text " id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Settings</a>
+                 
+                    </strong>  </div>
                   <!-- Navigation -->
               
               

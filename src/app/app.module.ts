@@ -12,7 +12,11 @@ import { AppRoutingModule ,RoutingComponents } from './app-routing/app-routing.m
 import { ApphomeComponent } from './components/apphome/apphome.component';
 import { AppinscriptionComponent } from './components/appinscription/appinscription.component';
 import { AppinscriptionenseignantComponent } from './components/appinscriptionenseignant/appinscriptionenseignant.component';
-
+import {AuthService} from './services/auth.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
+import { Globals } from '../../global';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 @NgModule({
@@ -27,16 +31,22 @@ import { AppinscriptionenseignantComponent } from './components/appinscriptionen
     RoutingComponents,
     ApphomeComponent,
     AppinscriptionComponent,
-    AppinscriptionenseignantComponent
+    AppinscriptionenseignantComponent,
+    ProfileComponent,
+    
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
   MDBBootstrapModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+   FormsModule
   
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [],
+  providers: [
+    AuthService,Globals
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

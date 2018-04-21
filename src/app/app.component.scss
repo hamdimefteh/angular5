@@ -1,0 +1,31 @@
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+    }
+    
+    @font-face {
+      font-family: 'optimal';
+      src: url('/assets/fonts/Optimal Solutions.ttf');
+   }
+   @font-face {
+    font-family: 'space';
+    src: url('/assets/fonts/space age.ttf');
+ }
+ @font-face {
+  font-family: 'space';
+  src: url('/assets/fonts/Sansation_Light.ttf');
+}
+@font-face {
+  font-family: 'amazdoom';
+  src: url('/assets/fonts/AmazDooMLeft.ttf');
+}
+@font-face {
+  font-family: 'amaz';
+  src: url('/assets/fonts/AmazOOSTROBBold.ttf');
+}
+@font-face {
+  font-family: 'return';
+  src: url('/assets/fonts/return.ttf');
+}
+

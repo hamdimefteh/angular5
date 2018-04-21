@@ -1,11 +1,16 @@
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-default animated jello" [containerInside]="true">
+<header>
+<div class="container">
+  
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top  cyan  animated jello">
   <logo>
-      <a class="logo navbar-brand" href="#"><strong>Navbar</strong></a>    
-  </logo>
+      <a class="logo navbar-brand white-text"  (click)="menu1()"><strong ><i class="fa fa-home"></i></strong></a>    
+  
+      
+    </logo>
   <links>
       <ul class="navbar-nav mr-auto">
           <li class="nav-item active waves-light" mdbRippleRadius>
-              <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link .text-warning">Home </a>
           </li>
           <li class="nav-item waves-light" mdbRippleRadius>
               <a class="nav-link">Features</a>
@@ -18,6 +23,8 @@
           </li>
       </ul>
       <ul class="navbar-nav nav-flex-icons">
+      
+     
           <li class="nav-item waves-light" mdbRippleRadius>
               <a class="nav-link"><i class="fa fa-facebook"></i></a>
           </li>
@@ -27,6 +34,41 @@
           <li class="nav-item waves-light" mdbRippleRadius>
               <a class="nav-link"><i class="fa fa-instagram"></i></a>
           </li>
+          <li *ngIf="!g.notloggin"  class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link">
+                    
+                    <i (click)="onclick()" class="fa fa-power-off amber-text"></i>
+                
+                </a>
+            </li>
+
+            <li *ngIf="!!g.notloggin" class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="/authentification">
+                    <span class="clearfix d-none d-sm-inline-block"><i class="fa fa-user"></i> login</span>
+                </a>
+            </li>
       </ul>
+     
   </links>
+  
 </mdb-navbar>
+</div>
+
+<div class="space"></div>
+     
+    <div class="row animated lightSpeedIn">
+        
+        <div class="col-lg-8 b">
+                <h1 class="">BMH COMPANY LTD</h1>
+                <ul class="company white-text">
+                        <i class="fa fa-hand-o-right" aria-hidden="true"></i><li>online courses </li>
+                   
+                        <i class="fa fa-hand-o-right" aria-hidden="true"><li>web development </li></i>
+                      
+                        <i class="fa fa-hand-o-right" aria-hidden="true"><li>it solutions</li></i>
+                </ul>
+        </div>
+        <div class="col cyan">
+<img src='/assets/images/computer-banner.png' class=" img-fluid"> </div>
+</div>
+</header>

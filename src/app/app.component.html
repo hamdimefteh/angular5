@@ -1,11 +1,12 @@
-<div class="row"><div class="container-fluid col-lg-12"><app-appheader></app-appheader></div></div>
-<div class="row">
-<div class="container-fluid col-lg-2 pt-1">    
+
+<div class="row"><div class="col"><app-appheader></app-appheader></div></div>
+<div class="row flex-items-xs-middle">
+<div *ngIf="g.affichemenu" class="col-lg-2">    
 <app-appmenu></app-appmenu></div>
-<div class="container-fluid col-lg-8 contenu pt-2 pl-0 pr-0 ">
+<div class=" {{taille()}}">
 <router-outlet></router-outlet>
 </div>
-<div class=" container-fluid col-lg-2 pt-1">
+<div class="col-lg-2">
 <app-appaside></app-appaside></div>
 </div>
-<div class="row"><div class="container-fluid col-lg-12"><app-appfooter></app-appfooter></div></div>
+<div class="row"><div class="col"><app-appfooter></app-appfooter></div></div>

@@ -6,6 +6,10 @@ import { AppinscriptionenseignantComponent } from '../components/appinscriptione
 import { AppinscriptionComponent } from '../components/appinscription/appinscription.component';
 import { AppcontentComponent } from '../components/appcontent/appcontent.component';
 import { ApphomeComponent } from '../components/apphome/apphome.component';
+import { StudentpageComponent } from '../user/studentpage/studentpage.component';
+import {CanActivate} from "@angular/router";
+import { ProfileComponent } from '../components/profile/profile.component';
+
 const routes: Routes = [
   {path:'inscriptionenseignant' , component : AppinscriptionenseignantComponent },
   {path:'inscriptionetudiant' , component : AppinscriptionetudiantComponent },
@@ -13,6 +17,9 @@ const routes: Routes = [
   {path:'home' , component : ApphomeComponent },
   {path:'' , component : ApphomeComponent },
   {path:'inscription' , component : AppinscriptionComponent },
+  {path:'profile' , component : ProfileComponent },
+
+    {path:'**' , component : ApphomeComponent },
 ];
 
 

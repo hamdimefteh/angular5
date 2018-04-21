@@ -1,4 +1,27 @@
-mdb-navbar{
+ li{
+    font-family:"optimal";
+}
 
-  border-color: white;
+.space{
+    height:60px;
+}
+h1{
+    font-family:sansation;
+    color:white;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.company{
+    margin:30px auto;
+list-style-type:none;
+display:inline-block;
+}
+.company  li{
+  margin-left:5px;
+  margin-right:40px;
+    display:inline;
+}
+.b{
+    background-image:url("/assets/images/background.jpeg");
+
 }
